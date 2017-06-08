@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MineAccountController">
+            <connections>
+                <outlet property="aTableView" destination="G3w-SN-ZlK" id="21u-xe-NYm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="G3w-SN-ZlK">
+                    <rect key="frame" x="0.0" y="64" width="375" height="553"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="W4f-gn-HQY"/>
+                        <outlet property="delegate" destination="-1" id="02H-YL-66Q"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csf-Wb-mI0">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.79215686269999996" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="退出登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="outLingClick:" destination="-1" eventType="touchUpInside" id="FFp-Bq-VSC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="csf-Wb-mI0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9zK-Mr-zmx"/>
+                <constraint firstItem="G3w-SN-ZlK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FJR-YF-f12"/>
+                <constraint firstAttribute="trailing" secondItem="G3w-SN-ZlK" secondAttribute="trailing" id="JPs-f3-Sga"/>
+                <constraint firstAttribute="bottom" secondItem="csf-Wb-mI0" secondAttribute="bottom" id="TZr-xh-3oY"/>
+                <constraint firstItem="csf-Wb-mI0" firstAttribute="top" secondItem="G3w-SN-ZlK" secondAttribute="bottom" id="aTJ-VA-30B"/>
+                <constraint firstAttribute="trailing" secondItem="csf-Wb-mI0" secondAttribute="trailing" id="f2I-8c-BHC"/>
+                <constraint firstItem="G3w-SN-ZlK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="igY-bq-8Pr"/>
+                <constraint firstAttribute="bottom" secondItem="G3w-SN-ZlK" secondAttribute="bottom" constant="50" id="jjS-O4-Eny"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

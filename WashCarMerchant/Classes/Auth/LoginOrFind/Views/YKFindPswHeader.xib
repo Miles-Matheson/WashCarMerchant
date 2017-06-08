@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="79" id="KGk-i7-Jjw" customClass="YKFindPswHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="78.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9F2-Uk-Z4M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="78.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zh_03" translatesAutoresizingMaskIntoConstraints="NO" id="s4u-gc-TH4">
+                                <rect key="frame" x="20" y="15.5" width="280" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="pcJ-C4-vFX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s4u-gc-TH4" firstAttribute="centerY" secondItem="9F2-Uk-Z4M" secondAttribute="centerY" constant="-10" id="BmB-GK-7CR"/>
+                            <constraint firstItem="s4u-gc-TH4" firstAttribute="leading" secondItem="9F2-Uk-Z4M" secondAttribute="leading" constant="20" id="Tre-B5-9jm"/>
+                            <constraint firstAttribute="trailing" secondItem="s4u-gc-TH4" secondAttribute="trailing" constant="20" id="oXI-Nr-tHE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9F2-Uk-Z4M" secondAttribute="trailing" id="ACP-sZ-J5c"/>
+                    <constraint firstItem="9F2-Uk-Z4M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aMb-Tt-L2z"/>
+                    <constraint firstAttribute="bottom" secondItem="9F2-Uk-Z4M" secondAttribute="bottom" id="eda-Fb-bmf"/>
+                    <constraint firstItem="9F2-Uk-Z4M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fR8-rZ-DVx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="stageImgView" destination="s4u-gc-TH4" id="deQ-bR-I8Q"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="80.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="zh_03" width="327" height="27"/>
+    </resources>
+</document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="FindPswDownCell">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xg_cg" translatesAutoresizingMaskIntoConstraints="NO" id="gMQ-lD-3FP">
+                        <rect key="frame" x="124" y="13" width="69" height="69"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜您！密码修改成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuK-Uz-MNQ">
+                        <rect key="frame" x="97" y="92" width="123" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.2784313725" green="0.81960784310000001" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nuK-Uz-MNQ" firstAttribute="top" secondItem="gMQ-lD-3FP" secondAttribute="bottom" constant="10" id="VQi-ul-QOR"/>
+                    <constraint firstItem="gMQ-lD-3FP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="f9R-rX-id4"/>
+                    <constraint firstItem="gMQ-lD-3FP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gM4-ob-2tk"/>
+                    <constraint firstItem="nuK-Uz-MNQ" firstAttribute="centerX" secondItem="gMQ-lD-3FP" secondAttribute="centerX" id="l1c-4p-vCV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="50" y="133"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="xg_cg" width="69" height="69"/>
+    </resources>
+</document>
